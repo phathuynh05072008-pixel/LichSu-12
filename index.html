@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Học Tập Lịch Sử - Azota</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f2f4f7;
+        margin: 0;
+      }
+
+      header {
+        background: #1e40af;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 30px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: #1e40af;
+      }
+
+      select {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 15px;
+        background: #1e40af;
+        color: white;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>📘 HỌC TẬP LỊCH SỬ</h1>
+      <p>Chọn bài học để làm bài trên Azota</p>
+    </header>
+    <div class="container">
+      <h2>CHỌN BÀI HỌC CẦN LÀM TRÊN AZOTA</h2>
+
+      <select onchange="goAzota(this.value)">
+        <option value="">-- Chọn bài học --</option>
+        <optgroup label="Sử 12">
+          <option value="https://azota.vn/de-thi/pve2sr">từ câu 1-50</option>
+          <option value="https://azota.vn/de-thi/wfsu5u">từ câu 51-121</option>
+          <option value="https://azota.vn/de-thi/gex3ve">
+            Câu hỏi đúng/sai
+          </option>
+        </optgroup>
+      </select>
+    </div>
+    <footer>© 2026 | Trang web học tập Lịch sử – Azota</footer>
+    <script>
+      function goAzota(link) {
+        if (link) {
+          window.location.href = link;
+        }
+      }
+    </script>
+  </body>
+</html>
